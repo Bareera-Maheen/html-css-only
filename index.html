@@ -4,49 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* Base styles */
+        body {
+            background: #f7c2f7;
+            width: 94%;
+            align-items: center;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        h2 {
+            font-style: italic;
+            color-scheme: brown;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        a:hover {
+            text-shadow: #be737d;
+        }
+
+        /* Navigation */
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        /* Video Section */
+        video {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+        }
+
+        /* About Section */
+        #about {
+            height: 300px;
+            width: 290px;
+            align-items: center;
+            border-radius: 70%;
+            background: orchid;
+            padding: 10px;
+            margin: 20px auto;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #about p {
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            font-size: 18px;
+        }
+
+        /* Products Section */
+        #products {
+            margin-bottom: 20px;
+        }
+
+        .product-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 18px;
+            padding-left: 25px;
+            background: #e9afda;
+        }
+
+        .product-row p {
+            text-align: center;
+        }
+
+        .product-row img {
+            height: 150px;
+            width: 150px;
+        }
+
+        .product-row i {
+            display: block;
+            background-color: antiquewhite;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer div {
+            text-align: center;
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 768px) {
+            body {
+                padding-left: 2%;
+                padding-right: 2%;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            #about {
+                width: 80%;
+                margin: 20px auto;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .product-row {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-row p {
+                margin-bottom: 15px;
+            }
+
+            video {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            #about {
+                width: 90%;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .product-row img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .product-row i {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
-<body style="background: #f7c2f7;   width: 94%; align-items: center; text-align: center ; padding-left:5%; padding-right:5% ; "> 
+<body>
     <div style="display: flex; justify-content: space-between;">
-        <h1>Cloths.
-
-        </h1>
-        <h2 style="display: flex; gap: 15px;  font-style: italic ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color-scheme:brown;"><a  href="#about" > about</a> <a href="#products" style="text-shadow: #be737d;">products</a> <a href="#footer" style="text-shadow: #be737d;">contacts</a></h2>
+        <h1>Cloths</h1>
+        <h2 class="nav-links">
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#footer">Contacts</a>
+        </h2>
     </div>
+
+    <video autoplay controls loop poster="images.thumbnail.webp">
+        <source src="img/v4.mp4" type="video/mp4">
+    </video>
+
    
-    <video autoplay="" controls="" loop="" width="100%" control poster="images.thumbnail.webp"><source src="img/v4.mp4" type="video/mp4"></video>
+    <section id="about">
+        <h1 >About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque maxime, nisi nesciunt dolorem ex sed ut, unde voluptatum enim odio nostrum iste aut! Consectetur dolorem unde corporis. Sit, molestiae amet!</p>
+    </section>
 
-<h1>about</h1>
-<section id="about" style="height: 300px; width:290px; align-items: center;  border-radius: 70%; background:orchid;  padding: 10px; margin-right:125px; margin-left:200px;   padding-left: 300px; padding-right: 300px; ">
-  <p style="padding-top: 30px;  padding-left: 30px; padding-right: 30px; padding-bottom: 30px; font-size: 18px;"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque maxime, nisi nesciunt dolorem ex sed ut, unde voluptatum enim odio nostrum iste aut! Consectetur dolorem unde corporis. Sit, molestiae amet!</p>
-    
-</section>
-<h1>products</h1>
-<section id="products" >
-    <div style="display: flex; background: #e9afda;    gap: 18px; padding-left: 25px; ">
-       <p> <img src="img/p1.jpeg" alt="" height="150px" width="150px"  ><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-       <p>  <img src="img/p2.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-       <p> <img src="img/p3.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-       <p> <img src="img/p4.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-       <p> <img src="img/p5.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-       <p> <img src="img/p6.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-    </div>
-    <br><br>
-    <div style="display: flex;   gap: 18px;  padding-left: 25px; background: #e9afda; ">
-        <p>  <img src="img/p7.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-        <p> <img src="img/p8.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-        <p>  <img src="img/p9.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-        <p> <img src="img/p10.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-        <p> <img src="img/p11.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-        <p> <img src="img/p12.jpeg" alt="" height="150px" width="150px"><i style="background-color: antiquewhite;"> Rs:2500</i>   </p>
-    </div>
+    <h1>Products</h1>
+    <section id="products">
+        <div class="product-row">
+            <p><img src="img/p1.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p2.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p3.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p4.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p5.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p6.jpeg" alt=""><i>Rs:2500</i></p>
+        </div>
 
-</section>
-<h1>contacts</h1>
-<footer id="footer">
-    <div><li>home</li>
-        <li>about</li>
-        <li>contact</li></div><div></div>
-</footer>
+        <br><br>
+
+        <div class="product-row">
+            <p><img src="img/p7.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p8.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p9.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p10.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p11.jpeg" alt=""><i>Rs:2500</i></p>
+            <p><img src="img/p12.jpeg" alt=""><i>Rs:2500</i></p>
+        </div>
+    </section>
+
+    <h1>Contacts</h1>
+    <footer id="footer">
+        <div>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </div>
+    </footer>
 </body>
-
 </html>

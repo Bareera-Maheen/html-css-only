@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+   text-align: center;
+}
+
+ nav{
+    background-color:darksalmon;
+    color: white;
+  
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   
+   
+    top: 0;
+    align-self: top;
+  
+   overflow: hidden;
+    height: 1.5rem;
+    width: 99%;
+}
+.logo{
+    font-size:xx-large;
+    font-weight:900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+
+
+#sidenav{
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #8a7d7d;
+    overflow-x:hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+   
+}
+#sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: azure;
+    display: block;
+    transition: 0.3s;
+   
+   
+}
+#sidenav a:hover{
+    color: aquamarine;
+
+}
+
+#sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size:36px;
+  
+   
+}
+
+
+#main{ transition: margin-left .5s  ;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+button{
+    background-color: darksalmon;
+}
+
+section {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:darksalmon;
+    color: white;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart {
+    background-color: darksalmon;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: darksalmon;
+    
+}
+
+#cart {
+    padding: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+#cart-items div {
+    margin: 5px 0;
+}
+
+#cart-total {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.product{
+    align-items: flex-end;
+}
+.divbg{
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+}
+
+
+nav ul li a{
+    color: azure;
+    text-decoration: none;
+   
+    font: bold;
+}
+#one-frame{
+    display: flex;
+   
+    gap:-70px;
+}
+
+.c{
+    display: flex;
+    height: 275px;
+    
+      background:darksalmon; 
+       
+       
+    
+}
+span{
+    text-align: left;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+  
+}
+span h1{
+    font-size:40px;
+  }
+.d{
+   height: 255px;  
+   width: 99%;
+    background:bisque; 
+      
+     
+}
+
+.e{
+    height: 237px; width:250px; 
+     border-radius: 50%;  
+      padding: 10px; 
+      margin-right:810px  ;
+    
+}
+
+
+footer{
+    grid-area:footer;
+   bottom: 0;
+  
+   height: 7rem;
+grid-area: footer;
+background-color: rgb(25, 29, 26);
+    color: azure;
+    width: calc(100%-200px);
+}
+/* @media screen and(max-height:450px) {
+    .sidenav{padding-top: 15px;}
+    .sidenav a{
+        font-size: 18px;
+    }
+} */
+@media screen and(min-height:450px) {
+    .sidenav{padding-top: 15px;}
+    .sidenav a{
+        font-size: 18px;
+    }
+}
